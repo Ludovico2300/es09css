@@ -1,0 +1,89 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.container {  
+    width: 30em;
+    background-image: linear-gradient(rgb(176,176,176), rgb(242,242,242));
+    box-shadow: 0 4px 8px 0 lightgrey, 0 6px 20px 0 grey;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr 0.3fr;
+    grid-template-rows: 0.4fr 2.2fr 0.1fr 0.5fr;
+    grid-template-areas:
+      "foto-utente dati-post option-post"
+      "foto-post foto-post foto-post"
+      "int-post int-post int-post"
+      "caption-post caption-post caption-post";
+    margin: 5%;
+    align-items: center;
+    
+}
+
+ 
+ 
+    .foto-utente { 
+        grid-area: foto-utente; 
+    }
+
+    .foto-utente img{ 
+        width: 3em;
+        margin: 15%; 
+    }
+    
+  
+  .dati-post {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "nome-utente"
+        "data-post";
+        grid-area: dati-post;
+    }
+  
+  .nome-utente { 
+      grid-area: nome-utente;
+      font-weight: bold; 
+    }
+  
+  .data-post { 
+      grid-area: data-post; 
+    }
+  
+  .foto-post { 
+      grid-area: foto-post; 
+      width: 100%;
+
+    }
+
+    .foto-post img{ 
+        width: 100%; 
+      }
+  
+  .option-post { 
+      grid-area: option-post; 
+    }
+    .option-post img{ 
+        margin: 15%;
+        width: 3em; 
+      }
+  
+  .int-post { 
+      grid-area: int-post; 
+    }
+
+    .int-post img{ 
+        margin: 10px;
+        display: inline-block;
+        width: 5%; 
+      }
+  
+  .caption-post { 
+      grid-area: caption-post; 
+    }
+  
